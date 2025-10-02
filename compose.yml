@@ -8,9 +8,8 @@ services:
         source: ./data
         target: /data
     environment:
-      - FOUNDRY_PASSWORD=<your_password>
-      - FOUNDRY_USERNAME=<your_username>
       - FOUNDRY_ADMIN_KEY=atropos
+      - CONTAINER_PRESERVE_CONFIG=true
       # - CONTAINER_CACHE=/data/container_cache
       # - CONTAINER_CACHE_SIZE=
       # - CONTAINER_PATCHES=/data/container_patches

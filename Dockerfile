@@ -26,6 +26,7 @@ FROM node:${NODE_IMAGE_VERSION} AS optional-release-stage
 ARG FOUNDRY_RELEASE_URL
 ARG FOUNDRY_VERSION
 ENV ARCHIVE="foundryvtt-${FOUNDRY_VERSION}.zip"
+ENV CONTAINER_PRESERVE_CONFIG="true"
 
 WORKDIR /root
 COPY --from=compile-typescript-stage \
@@ -39,24 +40,12 @@ COPY --from=compile-typescript-stage \
 RUN mkdir dist && touch dist/.placeholder
 
 RUN \
-  --mount=type=secret,id=foundry_username,required=false \
-  --mount=type=secret,id=foundry_password,required=false \
   npm install && \
-  if [ -f /run/secrets/foundry_username ] && [ -f /run/secrets/foundry_password ]; then \
-  ./authenticate.js "$(cat /run/secrets/foundry_username)" "$(cat /run/secrets/foundry_password)" cookiejar.json && \
-  presigned_url=$(./get_release_url.js --retry 5 cookiejar.json "${FOUNDRY_VERSION}") && \
-  DOWNLOAD_URL="${presigned_url}"; \
-  elif [ -n "${FOUNDRY_RELEASE_URL}" ]; then \
   DOWNLOAD_URL="${FOUNDRY_RELEASE_URL}"; \
-  else \
-  echo "No valid credentials or pre-signed URL provided. Skipping pre-installation."; \
-  fi && \
-  if [ -n "${DOWNLOAD_URL}" ]; then \
   apt-get update && apt-get install -y unzip wget && \
   wget -O ${ARCHIVE} "${DOWNLOAD_URL}" && \
   mkdir -p "dist/resources/app" && \
-  unzip -d "dist/resources/app" ${ARCHIVE}; \
-  fi
+  unzip -d "dist/resources/app" ${ARCHIVE};
 
 FROM node:${NODE_IMAGE_VERSION} AS final-stage
 
@@ -97,15 +86,11 @@ RUN mkdir -p resources /data \
   && npm install && echo ${CONTAINER_VERSION} > image_version.txt
 
 VOLUME ["/data"]
-# HTTP Server
-EXPOSE 30000/TCP
-# TURN Server
-# Not exposing TURN ports due to bug in Docker.
-# See: https://github.com/moby/moby/issues/11185
-# EXPOSE 33478/UDP
-# EXPOSE 49152-65535/UDP
+EXPOSE 30000/tcp
 
 USER node
+RUN find /home/node -type f -exec sed -i 's/\r$//' {} \;
+
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["resources/app/main.mjs", "--port=30000", "--headless", "--noupdate",\
   "--dataPath=/data"]
