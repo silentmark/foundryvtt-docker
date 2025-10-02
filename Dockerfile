@@ -1,6 +1,6 @@
-ARG CONTAINER_VERSION=13.348.0
+ARG CONTAINER_VERSION=13.350.0
 ARG FOUNDRY_RELEASE_URL
-ARG FOUNDRY_VERSION=13.348
+ARG FOUNDRY_VERSION=13.350
 ARG NODE_IMAGE_VERSION=22-bookworm-slim
 
 FROM node:${NODE_IMAGE_VERSION} AS compile-typescript-stage
@@ -26,7 +26,6 @@ FROM node:${NODE_IMAGE_VERSION} AS optional-release-stage
 ARG FOUNDRY_RELEASE_URL
 ARG FOUNDRY_VERSION
 ENV ARCHIVE="foundryvtt-${FOUNDRY_VERSION}.zip"
-ENV CONTAINER_PRESERVE_CONFIG="true"
 
 WORKDIR /root
 COPY --from=compile-typescript-stage \
@@ -64,7 +63,7 @@ WORKDIR $HOME
 
 COPY --from=optional-release-stage /root/dist/ .
 COPY --from=compile-typescript-stage /root/dist/ .
-COPY \
+COPY --chown=node:node \
   package.json \
   package-lock.json \
   src/check_health.sh \
@@ -89,7 +88,7 @@ VOLUME ["/data"]
 EXPOSE 30000/tcp
 
 USER node
-RUN find /home/node -type f -exec sed -i 's/\r$//' {} \;
+RUN find /home/node -maxdepth 1 -type f -name "*.sh" -exec sed -i 's/\r$//' {} \;
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["resources/app/main.mjs", "--port=30000", "--headless", "--noupdate",\

@@ -18,16 +18,16 @@ source logging.sh
 log_debug "Ensuring ${CONFIG_DIR} directory exists."
 mkdir -p "${CONFIG_DIR}"
 
-if [[ "${CONTAINER_PRESERVE_CONFIG:-}" == "true" && -f "${CONFIG_FILE}" ]]; then
-  log_warn "CONTAINER_PRESERVE_CONFIG is set: Not updating options.json"
+if [[ -f "${CONFIG_FILE}" ]]; then
+  log_warn "Not updating options.json"
 else
   # Update configuration file
   log "Generating options.json file."
   ./set_options.js > "${CONFIG_FILE}"
 fi
 
-if [[ "${CONTAINER_PRESERVE_CONFIG:-}" == "true" && -f "${ADMIN_KEY_FILE}" ]]; then
-  log_warn "CONTAINER_PRESERVE_CONFIG is set: Not updating admin.txt"
+if [[ -f "${ADMIN_KEY_FILE}" ]]; then
+  log_warn "Not updating admin.txt"
 else
   # Save admin access key to file if set.  Delete file if unset.
   if [[ "${FOUNDRY_ADMIN_KEY:-}" ]]; then
