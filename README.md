@@ -11,7 +11,7 @@
 [![CodeQL](https://github.com/felddy/foundryvtt-docker/workflows/CodeQL/badge.svg)](https://github.com/felddy/foundryvtt-docker/actions/workflows/codeql-analysis.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/felddy/foundryvtt-docker/badge)](https://securityscorecards.dev/viewer/?uri=github.com/felddy/foundryvtt-docker)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5966/badge)](https://bestpractices.coreinfrastructure.org/projects/5966)
-[![FoundryVTT Release Version: v13.350](https://img.shields.io/badge/release-v13.350-brightgreen?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAA6gAwAEAAAAAQAAAA4AAAAATspU+QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAiFJREFUKBVVks1rE1EUxc+d5tO0prZVSZsUhSBIPyC02ooWurJ0I7rQlRvdC/4N4h9gt7pyoRTswpWgILgQBIOIiC340VhbpC0Ek85MGmPmXc+baWpNGJg77/7uOffeB+z9FHB0FrH9eLwwqpOF0f34KrpsTicW+6L8KE8QhO/n8n1IOgtQHYZA+a/Ai9+Wd6v1g7liq5A2OjKSQNa9hkO4hAzOIylf6CHALk6hoWXsylPkfjyyApaJhVCxmERy5zLSuI7D8h1H5BWht1aBhS6wdI3pN7GabyuyS4JPrchzujmNjDxAVrrRL2PoxRSGxOfjssgEjkkJvVJBWu6h5M7YenvDoOO0OgicD4TPIKWbBG6xvwTaKCMwSU7hKxK6gt8mbsFIMaF5iDyjUg6iPnqc58higCr9fD4iTvWMziAmK2g73f/AADVWX0YXrlChirgOcqL3WXYBYpTfUuxzjkW30dI1C0ZW1RnjMopo4C56MIs6CgQrMER2cJoz9zjdO2iz17g2yZUjqzHWbuA4/ugiEz7DVRe/aLxmcvDQ5Cq+oWGWeDbAgiETXgArrVOFGzR0EkclxrVMcpfLgFThY5roe2yz95ZZkzcbj22+w2VG8Pz6Q/b5Gr6uM9mw04uo6ll4tOlhE8a8xNzGYihCJoT+u3I4kUIp6OM0X9CHHds8frbqsrXlh9CB62nj8L5a9Y4DHR/K68TgcHhoz607Qp34L72X0rdSdM+vAAAAAElFTkSuQmCC)](https://foundryvtt.com/releases/13.350)
+[![FoundryVTT Release Version: v13.351](https://img.shields.io/badge/release-v13.351-brightgreen?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAA6gAwAEAAAAAQAAAA4AAAAATspU+QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KTMInWQAAAiFJREFUKBVVks1rE1EUxc+d5tO0prZVSZsUhSBIPyC02ooWurJ0I7rQlRvdC/4N4h9gt7pyoRTswpWgILgQBIOIiC340VhbpC0Ek85MGmPmXc+baWpNGJg77/7uOffeB+z9FHB0FrH9eLwwqpOF0f34KrpsTicW+6L8KE8QhO/n8n1IOgtQHYZA+a/Ai9+Wd6v1g7liq5A2OjKSQNa9hkO4hAzOIylf6CHALk6hoWXsylPkfjyyApaJhVCxmERy5zLSuI7D8h1H5BWht1aBhS6wdI3pN7GabyuyS4JPrchzujmNjDxAVrrRL2PoxRSGxOfjssgEjkkJvVJBWu6h5M7YenvDoOO0OgicD4TPIKWbBG6xvwTaKCMwSU7hKxK6gt8mbsFIMaF5iDyjUg6iPnqc58higCr9fD4iTvWMziAmK2g73f/AADVWX0YXrlChirgOcqL3WXYBYpTfUuxzjkW30dI1C0ZW1RnjMopo4C56MIs6CgQrMER2cJoz9zjdO2iz17g2yZUjqzHWbuA4/ugiEz7DVRe/aLxmcvDQ5Cq+oWGWeDbAgiETXgArrVOFGzR0EkclxrVMcpfLgFThY5roe2yz95ZZkzcbj22+w2VG8Pz6Q/b5Gr6uM9mw04uo6ll4tOlhE8a8xNzGYihCJoT+u3I4kUIp6OM0X9CHHds8frbqsrXlh9CB62nj8L5a9Y4DHR/K68TgcHhoz607Qp34L72X0rdSdM+vAAAAAElFTkSuQmCC)](https://foundryvtt.com/releases/13.351)
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/felddy/foundryvtt)](https://hub.docker.com/r/felddy/foundryvtt)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/felddy/foundryvtt)](https://hub.docker.com/r/felddy/foundryvtt)
@@ -214,28 +214,28 @@ Virtual Tabletop](https://foundryvtt.com/article/versioning/) that they support.
 > major version.
 
 | Image:tag | Description |
-|-----------|-------------|
-|`felddy/foundryvtt:13`| The most recent image matching the major version number.  Most users will use this tag. |
-|`felddy/foundryvtt:13.350`| The most recent image matching the major and minor version numbers. |
-|`felddy/foundryvtt:13.350.0`| An exact image version. |
-|`felddy/foundryvtt:release` | The most recent image from the `stable` channel.  These images are **considered stable**, and well-tested.  The `latest` tag always points to the same version as `release`.|
-|`felddy/foundryvtt:latest`| Same as the `release` tag.  [Why does `latest` == `release`?](https://vsupalov.com/docker-latest-tag/) |
+| ----------- | ------------- |
+| `felddy/foundryvtt:13` | The most recent image matching the major version number.  Most users will use this tag. |
+| `felddy/foundryvtt:13.351` | The most recent image matching the major and minor version numbers. |
+| `felddy/foundryvtt:13.351.0` | An exact image version. |
+| `felddy/foundryvtt:release` | The most recent image from the `stable` channel.  These images are **considered stable**, and well-tested.  The `latest` tag always points to the same version as `release`. |
+| `felddy/foundryvtt:latest` | Same as the `release` tag.  [Why does `latest` == `release`?](https://vsupalov.com/docker-latest-tag/) |
 
 See the [tags tab](https://hub.docker.com/r/felddy/foundryvtt/tags) on Docker
 Hub for a list of all the supported tags.
 
 ## Volumes ##
 
-| Mount point | Purpose        |
-|-------------|----------------|
-| `/data`    | Configuration, data, and log storage. |
+| Mount point | Purpose                               |
+| ----------- | ------------------------------------- |
+| `/data`     | Configuration, data, and log storage. |
 
 ## Ports ##
 
 The following ports are exposed by this container:
 
-| Port | Purpose        |
-|------|----------------|
+| Port    | Purpose                                       |
+| ------- | --------------------------------------------- |
 | `30000` | Foundry Virtual Tabletop server web interface |
 
 ## Environment variables ##
@@ -253,9 +253,9 @@ evaluated in the following order of precedence:
 
 #### Credentials variables ####
 
-| Name             | Purpose  |
-|------------------|----------|
-| `FOUNDRY_PASSWORD` | Account password for foundryvtt.com.  Required for downloading an application distribution. |
+| Name               | Purpose                                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `FOUNDRY_PASSWORD` | Account password for foundryvtt.com.  Required for downloading an application distribution.                  |
 | `FOUNDRY_USERNAME` | Account username or email address for foundryvtt.com.  Required for downloading an application distribution. |
 
 ***Note:*** `FOUNDRY_USERNAME` and `FOUNDRY_PASSWORD` may be set [using
@@ -263,26 +263,27 @@ secrets](#using-secrets) instead of environment variables.
 
 #### Presigned URL variable ####
 
-| Name             | Purpose  |
-|------------------|----------|
-| `FOUNDRY_RELEASE_URL` | The presigned URL generate from the user's profile.  Required for downloading an application distribution. |
+| Name                  | Purpose                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `FOUNDRY_RELEASE_URL` | The presigned URL generated from the user's profile.  Required for downloading an application distribution. |
 
 ### Optional variables ###
 
-| Name  | Purpose | Default |
-|-------|---------|---------|
-| `CONTAINER_CACHE` | Set a path to cache downloads of the Foundry distribution archive and speed up subsequent container startups.  The path should be in `/data` or another persistent mount point in the container.  Set to `""` to disable.  ***Note***: When the cache is disabled the container may sleep instead of exiting, in certain circumstances, to prevent a download loop.  A distribution can be pre-downloaded and placed into a cache directory.  The distribution's name must be of the form: `foundryvtt-13.350.zip`| `/data/container_cache` |
-| `CONTAINER_CACHE_SIZE` | Set the maximum number of distribution versions to keep in the cache.  The minimum is `1`.  When the limit is exceeded, the oldest versions (lowest version numbers) are removed first.  Unset to disable cache size management and keep all versions.  | |
-| `CONTAINER_PATCHES` | Set a path to a directory of shell scripts to be sourced after Foundry is installed but before it is started.  The path should be in `/data` or another persistent mount point in the container. e.g.; `/data/container_patches`  Patch files are sourced in lexicographic order.  `CONTAINER_PATCHES` are processed after `CONTAINER_PATCH_URLS`.| |
+| Name | Purpose | Default |
+| ---- | ------- | ------- |
+| `CONTAINER_CACHE` | Set a path to cache downloads of the Foundry distribution archive and speed up subsequent container startups.  The path should be in `/data` or another persistent mount point in the container.  Set to `""` to disable.  ***Note***: When the cache is disabled the container may sleep instead of exiting, in certain circumstances, to prevent a download loop.  A distribution can be pre-downloaded and placed into a cache directory.  The distribution's name must be of the form: `foundryvtt-13.351.zip` | `/data/container_cache` |
+| `CONTAINER_CACHE_SIZE` | Set the maximum number of distribution versions to keep in the cache.  The minimum is `1`.  When the limit is exceeded, the oldest versions (lowest version numbers) are removed first.  Unset to disable cache size management and keep all versions. | |
+| `CONTAINER_PATCHES` | Set a path to a directory of shell scripts to be sourced after Foundry is installed but before it is started.  The path should be in `/data` or another persistent mount point in the container. e.g.; `/data/container_patches`  Patch files are sourced in lexicographic order.  `CONTAINER_PATCHES` are processed after `CONTAINER_PATCH_URLS`. | |
 | `CONTAINER_PATCH_URLS` | Set to a space-delimited list of URLs to be sourced after Foundry is installed but before it is started.  Patch URLs are sourced in the order specified.  `CONTAINER_PATCH_URLS` are processed before `CONTAINER_PATCHES`.  ⚠️ **Only use patch URLs from trusted sources!** | |
 | `CONTAINER_PRESERVE_CONFIG` | Normally new `options.json` and `admin.txt` files are generated by the container at each startup.  Setting this to `true` prevents the container from modifying these files when they exist.  If they do not exist, they will be created as normal. | `false` |
+| `CONTAINER_UMASK` | Control the default permissions on new files and directories created by Foundry VTT. Set the umask to `"0002"` if you need new files to be writable by other users in the same group as the foundry user. If this is empty or not set, the umask will not be changed (the system default is `"0022"`). | |
 | `CONTAINER_URL_FETCH_RETRY` | Number of times to retry fetching the presigned URL using exponential back off.  This behavior is useful in continuous integration environments where multiple parallel workflows can exceed the rate-limit of the URL generation service. | `0` |
 | `CONTAINER_VERBOSE` | Set to `true` to enable verbose logging for the container utility scripts. | `false` |
 | `FOUNDRY_ADMIN_KEY` | Admin password to be applied at startup.  If omitted the admin password will be cleared.  May be set [using secrets](#using-secrets). | |
 | `FOUNDRY_AWS_CONFIG` | An absolute or relative path that points to the [awsConfig.json](https://foundryvtt.com/article/aws-s3/) or `true` for AWS environment variable [credentials evaluation](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html) usage. | `null` |
 | `FOUNDRY_COMPRESS_WEBSOCKET` | Set to `true` to enable compression of data sent from the server to the client via websocket. This is recommended for network performance. | `false` |
 | `FOUNDRY_CSS_THEME` | Choose the CSS theme for the setup page.  Choose from `foundry`, `fantasy`, or `scifi`. | `foundry` |
-| `FOUNDRY_DEMO_CONFIG` | Demo mode allows you to configure a world which will be automatically launched and reset at a frequency of your choosing.  When the world is reset, it is deactivated.  The source data for the world is restored to its original state using a provided `.zip` file, and the next reset is automatically scheduled.  See: [Configuring demo mode](https://foundryvtt.com/article/configuration/#command-line). |  |
+| `FOUNDRY_DEMO_CONFIG` | Demo mode allows you to configure a world which will be automatically launched and reset at a frequency of your choosing.  When the world is reset, it is deactivated.  The source data for the world is restored to its original state using a provided `.zip` file, and the next reset is automatically scheduled.  See: [Configuring demo mode](https://foundryvtt.com/article/configuration/#command-line). | |
 | `FOUNDRY_HOSTNAME` | A custom hostname to use in place of the host machine's public IP address when displaying the address of the game session. This allows for reverse proxies or DNS servers to modify the public address. | `null` |
 | `FOUNDRY_HOT_RELOAD` | Set to `true` to allow packages to hot-reload certain assets, such as CSS, HTML, and localization files without a full refresh. This setting is only recommended for developers. | `false` |
 | `FOUNDRY_IP_DISCOVERY` | Allow the Foundry server to discover and report the accessibility of the host machine's public IP address and port.  Setting this to `false` may reduce server startup time in instances where this discovery would timeout. | `true` |
@@ -300,9 +301,10 @@ secrets](#using-secrets) instead of environment variables.
 | `FOUNDRY_TELEMETRY` | Set to `true` to enable FoundryVTT telemetry, `false` to disable.  This options allows the collection of anonymous usage data to help improve FoundryVTT. | `null` |
 | `FOUNDRY_UPNP` | Allow Universal Plug and Play to automatically request port forwarding for the Foundry server port to your local network address. | `false` |
 | `FOUNDRY_UPNP_LEASE_DURATION` | Sets the Universal Plug and Play lease duration, allowing for the possibility of permanent leases for routers which do not support temporary leases.  To define an indefinite lease duration set the value to `0`. | `null` |
-| `FOUNDRY_VERSION` | Version of Foundry Virtual Tabletop to install. | `13.350` |
+| `FOUNDRY_VERSION` | Version of Foundry Virtual Tabletop to install. | `13.351` |
 | `FOUNDRY_WORLD` | The directory name of the world to launch at system start. | `null` |
-| `TZ`     | Container [TZ database name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) | `UTC` |
+| `TZ` | Container [TZ database name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) | `UTC` |
+| `*_PROXY` | Proxy settings to use during container initialization.  See [proxy-from-env](https://www.npmjs.com/package/proxy-from-env#environment-variables) for the list of supported environment variable names.  See [proxy-agent](https://www.npmjs.com/package/proxy-agent) for list of supported proxies protocols. | `null` |
 
 ### Node.js variables ###
 
@@ -313,7 +315,7 @@ server running FoundryVTT.  Listed below are some variables that are
 particularly useful.
 
 | Name | Purpose |
-|------|---------|
+| ---- | ------- |
 | `NODE_DEBUG` | `,`-separated list of core modules that should print debug information. |
 | `NODE_EXTRA_CA_CERTS` | When set, the well known "root" CAs (like VeriSign) will be extended with the extra certificates.  The file should consist of one or more trusted certificates in PEM format.  A message will be emitted (once) with `process.emitWarning()` if the file is missing or malformed, but any errors are otherwise ignored. |
 | `NODE_OPTIONS` | A space-separated list of command-line options that are interpreted before command-line options, so command-line options will override or compound after anything supplied.  Node.js will exit with an error if an option that is not allowed in the environment is used, such as `-p` or a script file. |
@@ -321,13 +323,13 @@ particularly useful.
 
 ## Secrets ##
 
-| Filename     | Key | Purpose |
-|--------------|-----|---------|
-| `config.json` | `foundry_admin_key` | Overrides `FOUNDRY_ADMIN_KEY` environment variable. |
-| `config.json` | `foundry_license_key` | Overrides `FOUNDRY_LICENSE_KEY` environment variable. |
-| `config.json` | `foundry_password` | Overrides `FOUNDRY_PASSWORD` environment variable. |
+| Filename      | Key                     | Purpose                                                 |
+| ------------  | ----------------------- | ------------------------------------------------------- |
+| `config.json` | `foundry_admin_key`     | Overrides `FOUNDRY_ADMIN_KEY` environment variable.     |
+| `config.json` | `foundry_license_key`   | Overrides `FOUNDRY_LICENSE_KEY` environment variable.   |
+| `config.json` | `foundry_password`      | Overrides `FOUNDRY_PASSWORD` environment variable.      |
 | `config.json` | `foundry_password_salt` | Overrides `FOUNDRY_PASSWORD_SALT` environment variable. |
-| `config.json` | `foundry_username` | Overrides `FOUNDRY_USERNAME` environment variable. |
+| `config.json` | `foundry_username`      | Overrides `FOUNDRY_USERNAME` environment variable.      |
 
 ## Building from source ##
 
@@ -335,7 +337,7 @@ Build the image locally using this git repository as the [build context](https:/
 
 ```console
 docker build \
-  --tag felddy/foundryvtt:13.350.0 \
+  --tag felddy/foundryvtt:13.351.0 \
   https://github.com/felddy/foundryvtt-docker.git#develop
 ```
 
@@ -359,7 +361,7 @@ Docker:
     docker buildx build \
       --platform linux/amd64 \
       --output type=docker \
-      --tag felddy/foundryvtt:13.350.0 .
+      --tag felddy/foundryvtt:13.351.0 .
     ```
 
 ## Pre-installed distribution builds ##
@@ -380,7 +382,7 @@ build-time instead of start-time.
 docker build \
   --secret id=foundry_username,src=<(echo "<your_username>") \
   --secret id=foundry_password,src=<(echo "<your_password>") \
-  --tag felddy/foundryvtt:13.350.0 \
+  --tag felddy/foundryvtt:13.351.0 \
   https://github.com/felddy/foundryvtt-docker.git#develop
 ```
 
@@ -393,7 +395,7 @@ docker build \
 > docker build \
 >   --secret id=foundry_username,src=<(jq -r '.foundry_username' path/to/credentials.json) \
 >   --secret id=foundry_password,src=<(jq -r '.foundry_password' path/to/credentials.json) \
->   --tag felddy/foundryvtt:13.350.0 \
+>   --tag felddy/foundryvtt:13.351.0 \
 >   https://github.com/felddy/foundryvtt-docker.git#develop
 > ```
 
@@ -405,7 +407,7 @@ documentation](https://docs.docker.com/build/building/secrets/).
 ```console
 docker build \
   --build-arg FOUNDRY_RELEASE_URL='<temporary_url>' \
-  --tag felddy/foundryvtt:13.350.0 \
+  --tag felddy/foundryvtt:13.351.0 \
   https://github.com/felddy/foundryvtt-docker.git#develop
 ```
 

@@ -1,9 +1,9 @@
 ---
 name: Label and close stale issues
 
-on:
+on: # yamllint disable-line rule:truthy
   schedule:
-    - cron: '0 10 * * *'  # everyday at 10am
+    - cron: 0 10 * * * # everyday at 10am
   workflow_dispatch:
 
 permissions:
@@ -14,11 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a  # tag=v2.13.1
+        uses: step-security/harden-runner@a90bcbc6539c36a85cdfeb73f7e2f433735f215b # tag=v2.15.0
         with:
-          egress-policy: audit  # TODO: change to 'egress-policy: block' after couple of runs
-
-      - uses: actions/stale@3a9db7e6a41a89f618792c92c0e97cc736e1b13f  # tag=v10.0.0
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+      - uses: actions/stale@b5d41d4e1d5dceea10e7104786b73624c18a190f # tag=v10.2.0
         with:
           days-before-stale: 28
           days-before-close: 7

@@ -31,8 +31,8 @@ for deprecated_env in $DEPRECATED_ENVS; do
 done
 
 # Setup the SIGTERM handler
-# shellcheck disable=SC2317
-# SC2317 - shellcheck does not understand reachability via traps
+# shellcheck disable=SC2329
+# SC2329 - shellcheck does not understand reachability via traps
 handle_sigterm() {
   log_warn "TERM signal received.  Shutting down server."
   # Only attempt to terminate if the child process is still running
@@ -315,7 +315,7 @@ END_OF_LINE
     for url in ${CONTAINER_PATCH_URLS}; do
       log "Downloading patch from URL: $url"
       patch_file=$(mktemp -t patch_url.sh.XXXXXX)
-      curl ${CONTAINER_VERBOSE+--verbose} --silent \
+      curl ${CONTAINER_VERBOSE+--verbose} --silent --location \
         --user-agent "${curl_user_agent}" \
         --output "${patch_file}" "${url}"
       log_debug "Sourcing patch file: ${patch_file}"

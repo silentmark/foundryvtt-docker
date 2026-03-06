@@ -1,9 +1,9 @@
-ARG CONTAINER_VERSION=13.350.0
+ARG CONTAINER_VERSION=13.351.0
 ARG FOUNDRY_RELEASE_URL
-ARG FOUNDRY_VERSION=13.350
+ARG FOUNDRY_VERSION=13.351
 ARG NODE_IMAGE_VERSION=22-bookworm-slim
 
-FROM node:${NODE_IMAGE_VERSION} AS compile-typescript-stage
+FROM public.ecr.aws/docker/library/node:${NODE_IMAGE_VERSION} AS compile-typescript-stage
 
 WORKDIR /root
 
@@ -17,7 +17,7 @@ COPY /src/*.ts src/
 RUN tsc
 RUN grep -l "#!" dist/*.js | xargs chmod a+x
 
-FROM node:${NODE_IMAGE_VERSION} AS optional-release-stage
+FROM public.ecr.aws/docker/library/node:${NODE_IMAGE_VERSION} AS optional-release-stage
 
 # This stage is optional and will only be executed if the FOUNDRY_RELEASE_URL or
 # FOUNDRY_USERNAME and FOUNDRY_PASSWORD secrets are provided.  It will download
@@ -46,7 +46,7 @@ RUN \
   mkdir -p "dist/resources/app" && \
   unzip -d "dist/resources/app" ${ARCHIVE};
 
-FROM node:${NODE_IMAGE_VERSION} AS final-stage
+FROM public.ecr.aws/docker/library/node:${NODE_IMAGE_VERSION} AS final-stage
 
 ARG CONTAINER_VERSION
 ARG FOUNDRY_VERSION
