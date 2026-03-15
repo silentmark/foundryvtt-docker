@@ -4,8 +4,6 @@ name: Scorecards supply-chain security
 on: # yamllint disable-line rule:truthy
   # Only the default branch is supported.
   branch_protection_rule:
-  schedule:
-    - cron: 43 4 * * 4
   push:
     branches:
       - develop
